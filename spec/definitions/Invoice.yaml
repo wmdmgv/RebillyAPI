@@ -39,7 +39,11 @@ properties:
   coupons:
     type: array
     description: Coupons IDs applied to invoice
-    readOnly: true
+    items:
+      type: string
+  credits:
+    type: array
+    description: Credits IDs applied to invoice
     items:
       type: string
   items:
