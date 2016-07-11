@@ -41,7 +41,7 @@ properties:
     description: If Invoice item is taxed. TODO - not clear proposed values (in requirements)
     type: string
     enum:
-      - *
+      - "*"
       - T
       - V
   periodStartTime:
