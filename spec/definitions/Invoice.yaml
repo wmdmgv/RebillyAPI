@@ -28,6 +28,20 @@ properties:
     description: Invoice's delivery contact ID
     allOf:
       - $ref: "#/definitions/ResourceId"
+  status:
+    description: Invoice's status
+    type: string
+    enum:
+      - draft
+      - issued
+      - voided
+      - abandoned
+  coupons:
+    type: array
+    description: Coupons IDs applied to invoice
+    readOnly: true
+    items:
+      type: string
   items:
     type: array
     description: Invoice items array
