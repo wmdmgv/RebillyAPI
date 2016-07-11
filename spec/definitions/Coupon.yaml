@@ -54,10 +54,12 @@ properties:
       - different-level
   startTime:
     description: The coupon's start time
-    type: date-time
+    type: string
+    format: date-time
   endTime:
     description: The coupon's end time (expiration time)
-    type: date-time
+    type: string
+    format: date-time
   usesMaximum:
     description: The coupon's maximum number of uses in total
     type: integer
