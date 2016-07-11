@@ -43,7 +43,8 @@ properties:
     type: string
     description: The coupon's discount level. TODO - not too clear
   taxCategory:
-    - $ref: "#/definitions/TaxCategory"
+    description: Coupon's tax category
+    type: string
   combinable:
     description: TODO - how to define this?
     type: string
@@ -68,15 +69,15 @@ properties:
     type: integer
     readOnly: true
   createdTime:
-    description: Invoice created time
+    description: Coupon created time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   updatedTime:
-    description: Invoice updated time
+    description: Coupon updated time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   archivedTime:
-    description: Invoice archived time. It is not defined in requirements, but i believe we should have it (but no deletedTime)
+    description: Coupon archived time. It is not defined in requirements, but i believe we should have it (but no deletedTime)
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   _links:
