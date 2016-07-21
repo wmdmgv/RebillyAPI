@@ -8,6 +8,6 @@ properties:
     enum:
       - at-next-renewal
       - now-with-prorata-refund
-      - now-with_prorata-credit
+      - now-with-prorata-credit
       - now-without-refund
       - now-with-full-refund
