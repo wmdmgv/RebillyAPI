@@ -87,19 +87,19 @@ properties:
     items:
       type: string
       enum:
-        - visa
-        - master-card
-        - american-express
-        - discover
-        - maestro
-        - solo
-        - electron
-        - jcb
-        - voyager
-        - diners-club
-        - switch
-        - laser
-        - china-unionpay
+        - Visa
+        - MasterCard
+        - American Express
+        - Discover
+        - Maestro
+        - Solo
+        - Electron
+        - JCB
+        - Voyager
+        - Diners Club
+        - Switch
+        - Laser
+        - China Unionpay
   downtimeStart:
     description: Gateway downtime start
     type: string
