@@ -12,9 +12,8 @@ properties:
     type: string
     enum:
       - at-next-renewal
-      - now-with-prorata-refund
       - now-with-prorata-credit
-      - now-without-refund
+      - now
   websiteId:
     description: The website's ID
     allOf:
