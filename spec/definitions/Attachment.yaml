@@ -12,19 +12,19 @@ properties:
     description: Linked File object id
     type: string
     readOnly: true
-  objectType:
+  relatedType:
     description: Linked object name
     type: string
     enum:
-      - Dispute
-      - Customer
-      - Payment
-      - Transaction
-      - Subscription
-      - Plan
-      - Product
-      - Invoice
-  objectId:
+      - dispute
+      - customer
+      - payment
+      - transaction
+      - subscription
+      - plan
+      - product
+      - invoice
+  relatedId:
     description: Linked object Id
     type: string
   name:
