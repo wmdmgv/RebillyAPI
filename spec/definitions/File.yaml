@@ -1,25 +1,37 @@
 type: object
 properties:
   id:
-    description: Unique file ID
+    description: Unique File Id
     type: string
     readOnly: true
   name:
-    description: Original file name
+    description: Original File name
     type: string
     readOnly: true
   description:
-    description: Optional file description
+    description: Optional File description
     type: string
   url:
     description: An url for downloading
     type: string
     readOnly: true
+  extension:
+    description: The File extension
+    type: string
+    readOnly: true
+  size:
+    description: The File size in bytes
+    type: integer
+    readOnly: true
+  type:
+    description: The File type
+    type: string
+    readOnly: true
   createdTime:
-    description: The file upload date/time
+    description: The upload date/time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   updatedTime:
-    description: The record last update date/time
+    description: The latest update date/time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
