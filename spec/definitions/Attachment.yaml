@@ -1,8 +1,8 @@
 type: object
 required:
   - fileId
-  - objectType
-  - objectId
+  - relatedType
+  - relatedId
 properties:
   id:
     description: Unique Attachment ID
