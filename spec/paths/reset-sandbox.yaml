@@ -9,7 +9,7 @@ post:
       description: Sandbox was reseted
     401:
       $ref: "#/responses/AccessForbidden"
+
     409:
       description: Sandbox cannot be reseted now, try again later
-      schema:
-        $ref: "#/responses/Conflict"
+      $ref: "#/responses/Conflict"
