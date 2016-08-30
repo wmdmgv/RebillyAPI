@@ -12,4 +12,4 @@ post:
     409:
       description: Sandbox cannot be reseted now, try again later
       schema:
-        $ref: "#/definitions/Conflict"
+        $ref: "#/responses/Conflict"
