@@ -1,0 +1,15 @@
+post:
+  tags:
+    - ResetSandbox
+  summary: Reset sandbox
+  description: |
+    Reset sandbox
+  responses:
+    201:
+      description: Sandbox was reseted
+    401:
+      $ref: "#/responses/AccessForbidden"
+    409:
+      description: Sandbox cannot be reseted now, try again later
+      schema:
+        $ref: "#/definitions/Conflict"
