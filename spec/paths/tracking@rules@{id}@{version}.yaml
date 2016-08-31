@@ -1,0 +1,23 @@
+parameters:
+  - $ref: "#/parameters/resourceId"
+  - $ref: "#/parameters/rulesVersion"
+get:
+  tags:
+    - Tracking
+  summary: Retrieve a tracking rules log with specified identifier string and version
+  responses:
+    200:
+      description: Tracking rules log was retrieved successfully
+      headers:
+        Rate-Limit-Limit:
+          $ref: "#/headers/Rate-Limit-Limit"
+        Rate-Limit-Remaining:
+          $ref: "#/headers/Rate-Limit-Remaining"
+        Rate-Limit-Reset:
+          $ref: "#/headers/Rate-Limit-Reset"
+      schema:
+        $ref: "#/definitions/RulesTracking"
+    404:
+      $ref: "#/responses/NotFound"
+    401:
+      $ref: "#/responses/AccessForbidden"

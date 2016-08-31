@@ -1,0 +1,36 @@
+type: object
+description: Tracking Rules.
+readOnly: true
+properties:
+  eventType:
+    allOf:
+      - $ref: "#/definitions/ResourceId"
+  eventTime:
+    description: The time when event has happened
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  rulesVersion:
+    type: integer
+    description: The rules version
+  criteriaExcerpt:
+    type: array
+    description: The criteria excerpt
+    items:
+      type: string
+    example: |
+      {
+        "property1": "value1",
+        "property2": "value2",
+      }
+  rules:
+    description: The rules
+    allOf:
+      - $ref: "#/definitions/TrackingRule"
+  _links:
+    type: array
+    description: The links related to resource
+    readOnly: true
+    minItems: 1
+    maxItems: 1
+    items:
+      - $ref: "#/definitions/SelfLink"
