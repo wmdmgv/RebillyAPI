@@ -1,0 +1,37 @@
+type: object
+description: Coupons redeem log
+properties:
+  id:
+    readOnly: true
+    allOf:
+      - $ref: "#/definitions/ResourceId"
+  couponId:
+    description: Coupon's ID
+    allOf:
+      - $ref: "#/definitions/ResourceId"
+  resourceType:
+    description: Resoource type
+    type: string
+    readOnly: true
+    enum:
+      - invoice
+      - subscription
+      #- product
+  resourceId:
+    description: Resource ID
+    readOnly: true
+    allOf:
+      - $ref: "#/definitions/ResourceId"
+  redeemTime:
+    description: Coupon redeem time
+    readOnly: true
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  _links:
+    type: array #todo
+    description: The links related to resource
+    readOnly: true
+    minItems: 1
+    maxItems: 1
+    items:
+      - $ref: "#/definitions/SelfLink"

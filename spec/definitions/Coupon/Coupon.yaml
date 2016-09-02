@@ -44,18 +44,22 @@ properties:
     minimum: 0
     readOnly: true
   status:
-    type: boolean
+    type: string
     description: If coupon enabled
+    readOnly: true
+    enum:
+      - enabled
+      - disabled
   createdTime:
-    description: The API key created time
+    description: Coupon created time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   updatedTime:
-    description: The API key created time
+    description: Coupon created time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   archivedTime:
-    description: The API key created time
+    description: Coupon archived time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   _links:
