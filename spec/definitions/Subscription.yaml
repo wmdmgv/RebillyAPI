@@ -44,6 +44,11 @@ properties:
     description: Autopay determines if a payment attempt will be automatic
     type: boolean
     default: true
+  coupons:
+    type: array
+    description: Coupon's IDs
+    items:
+      type: string
   startTime:
     description: Subscription start time
     allOf:
