@@ -1,5 +1,5 @@
 description: Coupon application restrictions
-  type: object
+type: object
   discriminator: type
   properties:
     type:
