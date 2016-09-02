@@ -48,8 +48,8 @@ properties:
     description: If coupon enabled
     readOnly: true
     enum:
-      - enabled
-      - disabled
+      - active
+      - inactive
   createdTime:
     description: Coupon created time
     allOf:
