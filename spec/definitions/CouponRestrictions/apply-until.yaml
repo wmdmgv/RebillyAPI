@@ -1,0 +1,17 @@
+description: apply-until restrictions
+allOf:
+  -
+    $ref: "#/definitions/applicationRestrictions"
+  -
+    type: "object"
+    required:
+     - "value"
+    properties:
+      value:
+        type: string
+        description: Restriction value #todo
+        enum:
+          - single-use
+          - fixed-period
+          - invoices-applied-count
+          - until-canceled

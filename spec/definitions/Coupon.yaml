@@ -1,0 +1,68 @@
+type: object
+description: Coupons and Discounts
+properties:
+  id:
+    readOnly: true
+    allOf:
+      - $ref: "#/definitions/ResourceId"
+  code:
+    description: Coupon's code
+    type: string
+  type:
+    description: Discount type
+    type: string
+    enum:
+      - percent
+      - fixed
+  redemptionRestrictions:
+    description: Coupon redemption restrictions
+    type: object
+    properties:
+      startTime:
+        description: Coupon's start time
+        type: string
+        format: date-time
+      endTime:
+        description: Coupon's end time
+        type: string
+        format: date-time
+      totalQuantity:
+        description: Coupon's total quantity available. 0 for unlimited
+        type: integer
+        min: 0
+        default: 0
+      limitPerCustomer:
+        description: Coupon's limit per one Customer. 0 for unlimited
+        type: integer
+        min: 0
+        default: 0
+  applicationRestrictions:
+    - $ref: "#/definitions/applicationRestrictions"
+  redemptionCount:
+    type: integer
+    description: Coupon's redemption count
+    min: 0
+    readOnly: true
+  status:
+    type: boolean
+    description: If coupon enabled
+  createdTime:
+    description: The API key created time
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  updatedTime:
+    description: The API key created time
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  archivedTime:
+    description: The API key created time
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  _links:
+    type: array #todo
+    description: The links related to resource
+    readOnly: true
+    minItems: 1
+    maxItems: 1
+    items:
+      - $ref: "#/definitions/SelfLink"

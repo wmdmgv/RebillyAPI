@@ -1,0 +1,12 @@
+description: Coupon application restrictions
+  type: object
+  discriminator: type
+  properties:
+    type:
+      description: Coupon's application restriction type
+      type: string
+      enum:
+        - apply-until
+        - minimum-order-value
+        - apply-to-plans
+        #- apply-to-products
