@@ -29,19 +29,19 @@ properties:
       totalQuantity:
         description: Coupon's total quantity available. 0 for unlimited
         type: integer
-        min: 0
+        minimum: 0
         default: 0
       limitPerCustomer:
         description: Coupon's limit per one Customer. 0 for unlimited
         type: integer
-        min: 0
+        minimum: 0
         default: 0
   applicationRestrictions:
-    - $ref: "#/definitions/applicationRestrictions"
+    $ref: "#/definitions/applicationRestrictions"
   redemptionCount:
     type: integer
     description: Coupon's redemption count
-    min: 0
+    minimum: 0
     readOnly: true
   status:
     type: boolean
