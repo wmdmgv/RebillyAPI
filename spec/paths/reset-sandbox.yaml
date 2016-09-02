@@ -6,7 +6,7 @@ post:
     Reset sandbox
   responses:
     201:
-      description: Sandbox was reseted
+      description: Sandbox was reset
       headers:
         Rate-Limit-Limit:
           $ref: "#/headers/Rate-Limit-Limit"
@@ -19,5 +19,5 @@ post:
     401:
       $ref: "#/responses/AccessForbidden"
     409:
-      description: Sandbox cannot be reseted now, try again later
+      description: Sandbox cannot be reset now, try again later
       $ref: "#/responses/Conflict"
