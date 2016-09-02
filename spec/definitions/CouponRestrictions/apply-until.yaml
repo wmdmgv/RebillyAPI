@@ -1,7 +1,7 @@
 description: apply-until restrictions
 allOf:
   -
-    $ref: "#/definitions/applicationRestrictions"
+    $ref: "#/definitions/ApplicationRestrictions"
   -
     type: "object"
     required:

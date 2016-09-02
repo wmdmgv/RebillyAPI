@@ -37,7 +37,7 @@ properties:
         minimum: 0
         default: 0
   applicationRestrictions:
-    $ref: "#/definitions/applicationRestrictions"
+    $ref: "#/definitions/ApplicationRestrictions"
   redemptionCount:
     type: integer
     description: Coupon's redemption count
