@@ -9,7 +9,7 @@ get:
     200:
       description: Tracking coupon's redeem log was retrieved successfully
       schema:
-        $ref: "#/definitions/Coupontracking"
+        $ref: "#/definitions/CouponTracking"
     404:
       $ref: "#/responses/NotFound"
     401:
