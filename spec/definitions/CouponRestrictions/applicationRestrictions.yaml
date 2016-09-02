@@ -1,6 +1,6 @@
 description: Coupon application restrictions
 type: object
-discriminator: type
+discriminator: "type"
 properties:
   type:
     description: Coupon's application restriction type
