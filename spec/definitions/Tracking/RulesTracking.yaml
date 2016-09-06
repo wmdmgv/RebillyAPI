@@ -5,7 +5,7 @@ properties:
   eventType:
     allOf:
       - $ref: "#/definitions/ResourceId"
-  eventTime:
+  createdTime:
     description: The time when event has happened
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
@@ -13,10 +13,8 @@ properties:
     type: integer
     description: The rules version
   criteriaExcerpt:
-    type: array
+    type: object
     description: The criteria excerpt
-    items:
-      type: string
     example: |
       {
         "pointer1": "value1",
