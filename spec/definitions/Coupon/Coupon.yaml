@@ -2,12 +2,10 @@ type: object
 description: Coupons and Discounts
 properties:
   id:
+    description: Coupon's ID, also it is redemption code
     readOnly: true
     allOf:
       - $ref: "#/definitions/ResourceId"
-  code:
-    description: Coupon's code
-    type: string
   type:
     description: Discount type
     type: string
@@ -36,6 +34,14 @@ properties:
         type: integer
         minimum: 0
         default: 0
+      type:
+        description: Coupon's redemption restrictions type:
+        type: array
+        items:
+          type: string
+          enum:
+           - restrict-to-plans
+           - restrict-to-products
   applicationRestrictions:
     $ref: "#/definitions/ApplicationRestrictions"
   redemptionCount:
@@ -51,10 +57,6 @@ properties:
       - active
       - inactive
   createdTime:
-    description: Coupon created time
-    allOf:
-      - $ref: "#/definitions/ServerTimestamp"
-  updatedTime:
     description: Coupon created time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
