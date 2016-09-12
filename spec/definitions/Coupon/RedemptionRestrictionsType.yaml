@@ -1,0 +1,12 @@
+description: Coupon redemption restriction type
+type: object
+discriminator: "type"
+properties:
+  type:
+    description: Coupon's redemption restriction type
+    type: array
+    items:
+      type: string
+      enum:
+        - restrict-to-plans
+        - restrict-to-products

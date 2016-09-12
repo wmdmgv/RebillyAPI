@@ -10,5 +10,4 @@ properties:
       enum:
         - apply-until
         - minimum-order-value
-        - apply-to-plans
         - apply-to-products

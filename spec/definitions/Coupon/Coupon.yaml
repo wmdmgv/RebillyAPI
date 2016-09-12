@@ -35,13 +35,9 @@ properties:
         minimum: 0
         default: 0
       type:
-        description: Coupon's redemption restrictions type:
         type: array
         items:
-          type: string
-          enum:
-           - restrict-to-plans
-           - restrict-to-products
+         - $ref: "#/definitions/RedemptionRestrictions"
   applicationRestrictions:
     $ref: "#/definitions/ApplicationRestrictions"
   redemptionCount:
@@ -58,6 +54,10 @@ properties:
       - inactive
   createdTime:
     description: Coupon created time
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  updatedTime:
+    description: Coupon updated time. Coupon can not be updated after first redeem
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   archivedTime:

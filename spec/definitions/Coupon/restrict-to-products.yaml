@@ -1,0 +1,14 @@
+description: restrict-to-products restrictions
+allOf:
+  -
+    $ref: "#/definitions/RedemptionRestrictionsType"
+  -
+    type: "object"
+    required:
+     - "value"
+    properties:
+      value:
+        type: array
+        description: Restriction value. Array of ids #todo
+        items:
+          type: string

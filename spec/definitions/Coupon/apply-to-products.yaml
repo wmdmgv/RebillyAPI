@@ -1,4 +1,4 @@
-description: apply-until restrictions
+description: apply-to-products restrictions
 allOf:
   -
     $ref: "#/definitions/ApplicationRestrictions"

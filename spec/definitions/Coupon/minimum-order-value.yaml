@@ -1,4 +1,4 @@
-description: apply-until restrictions
+description: minimum-order-value restrictions
 allOf:
   -
     $ref: "#/definitions/ApplicationRestrictions"
