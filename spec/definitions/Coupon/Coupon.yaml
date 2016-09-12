@@ -37,7 +37,7 @@ properties:
       type:
         type: array
         items:
-         - $ref: "#/definitions/RedemptionRestrictions"
+         - $ref: "#/definitions/RedemptionRestrictionsType"
   applicationRestrictions:
     $ref: "#/definitions/ApplicationRestrictions"
   redemptionCount:
