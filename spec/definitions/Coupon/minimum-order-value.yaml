@@ -1,7 +1,7 @@
 description: minimum-order-value restrictions
 allOf:
   -
-    $ref: "#/definitions/ApplicationRestrictions"
+    $ref: "#/definitions/CouponRestriction"
   -
     type: "object"
     required:

@@ -1,7 +1,7 @@
 description: restrict-to-products restrictions
 allOf:
   -
-    $ref: "#/definitions/RedemptionRestrictionsType"
+    $ref: "#/definitions/CouponRestriction"
   -
     type: "object"
     required:

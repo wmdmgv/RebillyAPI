@@ -12,18 +12,12 @@ properties:
     enum:
       - percent
       - fixed
-  redemptionRestrictions:
+  restrictions:
     description: Coupon redemption restrictions
-    type: object
+    type: array
+    items:
+     - $ref: "#/definitions/CouponRestriction"
     properties:
-      startTime:
-        description: Coupon's start time
-        type: string
-        format: date-time
-      endTime:
-        description: Coupon's end time
-        type: string
-        format: date-time
       totalQuantity:
         description: Coupon's total quantity available. 0 for unlimited
         type: integer
@@ -34,12 +28,6 @@ properties:
         type: integer
         minimum: 0
         default: 0
-      type:
-        type: array
-        items:
-         - $ref: "#/definitions/RedemptionRestrictionsType"
-  applicationRestrictions:
-    $ref: "#/definitions/ApplicationRestrictions"
   redemptionCount:
     type: integer
     description: Coupon's redemption count
@@ -52,16 +40,20 @@ properties:
     enum:
       - active
       - inactive
+  issuedTime:
+    description: Coupon's issued time (start time)
+    type: string
+    format: date-time
+  expiredTime:
+    description: Coupon's expire time (end time)
+    type: string
+    format: date-time
   createdTime:
     description: Coupon created time
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   updatedTime:
-    description: Coupon updated time. Coupon can not be updated after first redeem
-    allOf:
-      - $ref: "#/definitions/ServerTimestamp"
-  archivedTime:
-    description: Coupon archived time
+    description: Coupon updated time. Coupon can not be updated after first redeem. Also ths timestamp is changed after every redemption.
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   _links:

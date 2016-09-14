@@ -1,7 +1,7 @@
 description: restrict-to-plans restrictions
 allOf:
   -
-    $ref: "#/definitions/RedemptionRestrictionsType"
+    $ref: "#/definitions/CouponRestriction"
   -
     type: "object"
     required:

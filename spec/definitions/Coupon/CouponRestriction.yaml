@@ -1,9 +1,9 @@
-description: Coupon application restrictions
+description: Coupon restrictions
 type: object
 discriminator: "type"
 properties:
   type:
-    description: Coupon's application restriction type
+    description: Coupon's restriction type
     type: array
     items:
       type: string
@@ -11,3 +11,7 @@ properties:
         - apply-until
         - minimum-order-value
         - apply-to-products
+        - restrict-to-plans
+        - restrict-to-products
+        - total-quantity
+        - limit-per-customer
