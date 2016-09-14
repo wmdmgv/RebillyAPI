@@ -1,6 +1,5 @@
 get:
   tags:
-    - Tracking
     - Coupons
   summary: Retrieve a list of tracking coupon's redeem logs
   parameters:

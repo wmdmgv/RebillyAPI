@@ -10,7 +10,7 @@ properties:
     allOf:
       - $ref: "#/definitions/ResourceId"
   resourceType:
-    description: Resoource type
+    description: Resource type
     type: string
     readOnly: true
     enum:
