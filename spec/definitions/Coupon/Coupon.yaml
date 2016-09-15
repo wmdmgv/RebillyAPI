@@ -53,7 +53,7 @@ properties:
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   updatedTime:
-    description: Coupon updated time. Coupon can not be updated after first redeem. Also ths timestamp is changed after every redemption.
+    description: Coupon updated time.
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
   _links:
