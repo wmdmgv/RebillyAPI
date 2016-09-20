@@ -1,4 +1,4 @@
-description: apply-until restrictions
+description: fixed-use-count restrictions
 allOf:
   -
     $ref: "#/definitions/CouponRestriction"
