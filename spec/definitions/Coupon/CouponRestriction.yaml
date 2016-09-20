@@ -8,7 +8,7 @@ properties:
     items:
       type: string
       enum:
-        - apply-until
+        - fixed-use-count
         - minimum-order-value
         - apply-to-products
         - restrict-to-plans
