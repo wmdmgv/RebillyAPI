@@ -1,7 +1,7 @@
 get:
   tags:
     - Coupons
-  summary: Retrieve a list of tracking coupon's redeem logs
+  summary: Retrieve a list of coupon redemptions
   parameters:
     - $ref: "#/parameters/collectionLimit"
     - $ref: "#/parameters/collectionOffset"
@@ -24,6 +24,6 @@ get:
       schema:
         type: array
         items:
-          $ref: "#/definitions/CouponTracking"
+          $ref: "#/definitions/CouponRedemption"
     401:
       $ref: "#/responses/AccessForbidden"

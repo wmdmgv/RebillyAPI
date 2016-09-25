@@ -2,14 +2,13 @@ parameters:
   - $ref: "#/parameters/resourceId"
 get:
   tags:
-    - Tracking
     - Coupons
-  summary: Retrieve a tracking coupon's redeem log with specified identifier string
+  summary: Retrieve a coupon redemption with specified identifier string
   responses:
     200:
-      description: Tracking coupon's redeem log was retrieved successfully
+      description: Retrieve a coupon redemption with specified identifier string
       schema:
-        $ref: "#/definitions/CouponTracking"
+        $ref: "#/definitions/CouponRedemption"
     404:
       $ref: "#/responses/NotFound"
     401:
