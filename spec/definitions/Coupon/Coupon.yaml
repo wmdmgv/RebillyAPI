@@ -1,5 +1,8 @@
 type: object
 description: Coupons and Discounts
+required:
+  - type
+  - value
 properties:
   id:
     description: Coupon's ID, also it is redemption code
