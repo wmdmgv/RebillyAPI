@@ -17,17 +17,6 @@ properties:
     type: array
     items:
      - $ref: "#/definitions/CouponRestriction"
-    properties:
-      totalQuantity:
-        description: Coupon's total quantity available. 0 for unlimited
-        type: integer
-        minimum: 0
-        default: 0
-      limitPerCustomer:
-        description: Coupon's limit per one Customer. 0 for unlimited
-        type: integer
-        minimum: 0
-        default: 0
   redemptionCount:
     type: integer
     description: Coupon's redemption count
