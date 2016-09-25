@@ -12,6 +12,13 @@ properties:
     enum:
       - percent
       - fixed
+  value:
+    description: Discount value
+    type: number
+    format: double
+  currency:
+    description: Discount currency. Required for fixed type
+    type: string
   restrictions:
     description: Coupon redemption restrictions
     type: array
