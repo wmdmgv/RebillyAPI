@@ -44,7 +44,7 @@ properties:
     description: Autopay determines if a payment attempt will be automatic
     type: boolean
     default: true
-  coupons:
+  couponIds:
     type: array
     description: Coupon's IDs
     items:

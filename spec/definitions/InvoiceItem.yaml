@@ -32,7 +32,7 @@ properties:
     description: End time
     type: string
     format: date-time
-  coupons:
+  couponIds:
     type: array
     description: Coupon's IDs
     items:

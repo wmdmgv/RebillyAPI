@@ -39,7 +39,7 @@ properties:
     readOnly: true
     items:
       type: string
-  coupons:
+  couponIds:
       type: array
       description: Coupon's IDs
       items:
