@@ -5,11 +5,12 @@ allOf:
   -
     type: "object"
     required:
-     - "value"
+     - "amount"
+     - "currency"
     properties:
-      value:
+      currency:
         type: string
-        description: Restriction value #todo
-        enum:
-          - currency
-          - amount
+        description: Restriction currency
+      amount:
+        type: string
+        description: Restriction amount
