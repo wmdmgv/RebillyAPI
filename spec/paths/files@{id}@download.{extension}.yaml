@@ -1,0 +1,37 @@
+parameters:
+  - $ref: "#/parameters/resourceId"
+  -
+    name: extension
+    in: path
+    description: File extension which also indicates the desired file format
+    type: string
+    required: true
+    enum:
+      - png
+      - jpg
+get:
+  tags:
+    - File transform
+  summary: Transform a file
+  description: |
+    Transform a file
+  responses:
+    200:
+      description: The file was retrieved successfully
+      headers:
+        Content-Length:
+          description: The number of bytes in the file
+          type: integer
+        Content-Type:
+          description: The MIME type of the file
+          type: string
+      schema:
+        type: string
+        readOnly: true
+    404:
+      $ref: "#/responses/NotFound"
+    401:
+      $ref: "#/responses/AccessForbidden"
+    422:
+      description: Unproccessible data
+      $ref: "#/responses/InvalidDataError"
