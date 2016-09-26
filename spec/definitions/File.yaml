@@ -18,8 +18,8 @@ properties:
   tags:
     description: The tags list
     type: array
-      items:
-        type: string
+    items:
+      type: string
   mime:
     description: The mime type
     type: string
