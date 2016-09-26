@@ -38,7 +38,7 @@ post:
   parameters:
     - name: body
       in: body
-      description: Contact resource
+      description: Attachment resource
       required: true
       schema:
         $ref: "#/definitions/Attachment"

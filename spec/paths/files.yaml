@@ -31,14 +31,14 @@ get:
       $ref: "#/responses/AccessForbidden"
 post:
   tags:
-    - Files
+    - File
   summary: Create a file
   description: |
     Create a file
   parameters:
     - name: body
       in: body
-      description: Contact resource
+      description: File resource
       required: true
       schema:
         $ref: "#/definitions/File"

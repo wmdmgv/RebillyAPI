@@ -11,10 +11,10 @@ parameters:
       - .jpg
 get:
   tags:
-    - File transform
-  summary: Transform a file
+    - File
+  summary: Used for converting images server-side
   description: |
-    Transform a file
+    Used for converting images server-side
   responses:
     200:
       description: The file was retrieved successfully
@@ -33,5 +33,5 @@ get:
     401:
       $ref: "#/responses/AccessForbidden"
     422:
-      description: Unproccessible data
+      description: Unprocessable data
       $ref: "#/responses/InvalidDataError"

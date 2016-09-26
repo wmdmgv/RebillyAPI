@@ -31,12 +31,12 @@ put:
   parameters:
     - name: body
       in: body
-      description: Attachemnt resource
+      description: Attachment resource
       required: true
       schema:
         $ref: "#/definitions/Attachment"
   responses:
-    200:
+    201:
       description: Attachment was updated
       headers:
         Rate-Limit-Limit:
