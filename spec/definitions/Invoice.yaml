@@ -39,11 +39,6 @@ properties:
     readOnly: true
     items:
       type: string
-  couponIds:
-      type: array
-      description: Coupon's IDs
-      items:
-        type: string
   abandonedTime:
     description: Invoice abandoned time
     allOf:

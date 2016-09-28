@@ -32,11 +32,6 @@ properties:
     description: End time
     type: string
     format: date-time
-  couponIds:
-    type: array
-    description: Coupon's IDs
-    items:
-      type: string
   _links:
     type: array
     description: The links related to resource
