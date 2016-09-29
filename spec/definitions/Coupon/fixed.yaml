@@ -5,8 +5,7 @@ allOf:
   -
     type: "object"
     required:
-     - "value"
-     - "currency"
+     - "discount"
     properties:
       discount:
         type: object
