@@ -2,7 +2,6 @@ type: object
 description: Coupons and Discounts
 required:
   - type
-  - value
 discriminator: "type"
 properties:
   redeemCode:
