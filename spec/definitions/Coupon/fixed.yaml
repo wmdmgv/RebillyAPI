@@ -1,19 +1,17 @@
 description: Coupon fixed discount
 allOf:
   -
-    $ref: "#/definitions/Coupon"
+    $ref: "#/definitions/Discount"
   -
     type: "object"
     required:
-     - "discount"
+     - "value"
+     - "currency"
     properties:
-      discount:
-        type: object
-        properties:
-          value:
-            description: Discount value
-            type: number
-            format: double
-          currency:
-            description: Discount currency
-            type: string
+      value:
+        description: Discount value
+        type: number
+        format: double
+      currency:
+        description: Discount currency
+        type: string

@@ -1,20 +1,17 @@
 type: object
 description: Coupons and Discounts
 required:
-  - type
-discriminator: "type"
+  - discount
 properties:
   redeemCode:
     description: Coupon's redemption code
     readOnly: true
     allOf:
       - $ref: "#/definitions/ResourceId"
-  type:
-    description: Discount type
-    type: string
-    enum:
-      - percent
-      - fixed
+  discount:
+    description: Coupon's discount
+    allOf:
+      - $ref: "#/definitions/Discount"
   restrictions:
     description: Coupon restrictions
     type: array
@@ -31,7 +28,7 @@ properties:
     readOnly: true
     enum:
       - issued
-      - exipred
+      - expired
   issuedTime:
     description: Coupon's issued time (start time)
     type: string
