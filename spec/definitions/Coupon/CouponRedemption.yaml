@@ -29,7 +29,7 @@ properties:
     readOnly: true
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
-  redeemedTime:
+  canceledTime:
     description: Coupon redemption canceled time
     readOnly: true
     allOf:
