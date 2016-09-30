@@ -36,7 +36,7 @@ put:
       schema:
         $ref: "#/definitions/Attachment"
   responses:
-    201:
+    200:
       description: Attachment was updated
       headers:
         Rate-Limit-Limit:

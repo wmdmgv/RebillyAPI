@@ -38,10 +38,14 @@ post:
   parameters:
     - name: body
       in: body
-      description: File resource
+      description: Additionally, a file can be send with a multipart/form-data POST request or the file's raw body can be sent as a requirest body
       required: true
       schema:
-        $ref: "#/definitions/File"
+        type: object
+        properties:
+          url:
+            description: The file URL
+            type: string
   responses:
     201:
       description: File was created

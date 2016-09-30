@@ -24,16 +24,22 @@ properties:
     description: The mime type
     type: string
     readOnly: true
+    enum:
+      - image/png
+      - image/jpeg
+      - image/gif
+      - application/pdf
+      - audio/mpeg-3
   size:
     description: The File size in bytes
     type: integer
     readOnly: true
   width:
-    description: image width, aplicable to images only
+    description: Image width, aplicable to images only
     type: integer
     readOnly: true
   height:
-    description: image height, aplicable to images only
+    description: Image height, aplicable to images only
     type: integer
     readOnly: true
   createdTime:
