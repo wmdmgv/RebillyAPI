@@ -1,4 +1,4 @@
-description: fixed-use-count restrictions
+description: discounts-per-redemption restrictions
 allOf:
   -
     $ref: "#/definitions/CouponRestriction"

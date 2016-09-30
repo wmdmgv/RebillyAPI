@@ -13,17 +13,6 @@ properties:
     description: Customer's ID
     allOf:
       - $ref: "#/definitions/ResourceId"
-  resourceType:
-    description: Resource type
-    type: string
-    enum:
-      - invoice
-      - subscription
-      #- product
-  resourceId:
-    description: Resource ID
-    allOf:
-      - $ref: "#/definitions/ResourceId"
   redeemedTime:
     description: Coupon redeem time
     readOnly: true

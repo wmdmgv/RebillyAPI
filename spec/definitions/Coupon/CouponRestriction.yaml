@@ -13,4 +13,6 @@ properties:
         - quantity-per-customer
         - restrict-to-plans
         - restrict-to-products
+        - restrict-to-invoices
+        - restrict-to-subscriptions
         - total-quantity
