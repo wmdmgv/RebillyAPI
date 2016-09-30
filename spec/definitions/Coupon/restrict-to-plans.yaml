@@ -7,7 +7,7 @@ allOf:
     required:
      - "planIds"
     properties:
-      value:
+      planIds:
         type: array
         description: Plan IDs coupon can be applied to
         items:
