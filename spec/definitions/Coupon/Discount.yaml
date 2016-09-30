@@ -6,4 +6,4 @@ properties:
     type: string
     enum:
       - percent
-      - fixed
+      - money

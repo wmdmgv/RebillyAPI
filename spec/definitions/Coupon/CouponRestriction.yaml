@@ -8,10 +8,9 @@ properties:
     items:
       type: string
       enum:
-        - fixed-use-count
+        - discounts-per-customers
+        - discounts-per-redemptions
         - minimum-order-amount
-        - apply-to-products
         - restrict-to-plans
         - restrict-to-products
         - total-quantity
-        - limit-per-customer

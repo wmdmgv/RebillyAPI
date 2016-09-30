@@ -1,4 +1,4 @@
-description: Coupon fixed discount
+description: Coupon money discount
 allOf:
   -
     $ref: "#/definitions/Discount"
