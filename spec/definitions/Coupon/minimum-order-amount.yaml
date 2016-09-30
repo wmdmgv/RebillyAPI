@@ -1,4 +1,4 @@
-description: minimum-order-value restrictions
+description: minimum-order-amount restrictions
 allOf:
   -
     $ref: "#/definitions/CouponRestriction"

@@ -17,9 +17,9 @@ properties:
     type: array
     items:
      - $ref: "#/definitions/CouponRestriction"
-  redemptionCount:
+  redemptionsCount:
     type: integer
-    description: Coupon's redemption count
+    description: Coupon's redemptions count
     minimum: 0
     readOnly: true
   status:

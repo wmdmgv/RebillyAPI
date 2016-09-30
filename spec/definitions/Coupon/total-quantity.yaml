@@ -5,8 +5,8 @@ allOf:
   -
     type: "object"
     required:
-     - "value"
+     - "quantity"
     properties:
-      value:
+      quantity:
         type: integer
-        description: Restriction value
+        description: Restriction total quantity

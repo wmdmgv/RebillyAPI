@@ -9,7 +9,7 @@ properties:
       type: string
       enum:
         - fixed-use-count
-        - minimum-order-value
+        - minimum-order-amount
         - apply-to-products
         - restrict-to-plans
         - restrict-to-products

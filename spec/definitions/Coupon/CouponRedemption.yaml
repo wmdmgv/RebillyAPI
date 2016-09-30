@@ -24,8 +24,13 @@ properties:
     description: Resource ID
     allOf:
       - $ref: "#/definitions/ResourceId"
-  redeemTime:
+  redeemedTime:
     description: Coupon redeem time
+    readOnly: true
+    allOf:
+      - $ref: "#/definitions/ServerTimestamp"
+  redeemedTime:
+    description: Coupon redemption canceled time
     readOnly: true
     allOf:
       - $ref: "#/definitions/ServerTimestamp"
