@@ -5,6 +5,10 @@ get:
   parameters:
     - $ref: "#/parameters/collectionLimit"
     - $ref: "#/parameters/collectionOffset"
+    - $ref: "#/parameters/collectionFilter"
+    - $ref: "#/parameters/collectionQuery"
+    - $ref: "#/parameters/collectionCriteria"
+    - $ref: "#/parameters/collectionSort"
   responses:
     200:
       description: Coupons redemptions were retrieved successfully
