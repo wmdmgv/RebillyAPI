@@ -1,7 +1,7 @@
 description: restrict-to-invoices restrictions
 allOf:
   -
-    $ref: "#/definitions/RedemptionRestriction"
+    $ref: "#/definitions/CouponRestriction"
   -
     type: "object"
     required:

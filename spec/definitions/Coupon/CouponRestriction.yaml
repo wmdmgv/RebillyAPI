@@ -4,13 +4,13 @@ discriminator: "type"
 properties:
   type:
     description: Coupon's restriction type
-    type: array
-    items:
-      type: string
-      enum:
-        - discounts-per-redemption
-        - minimum-order-amount
-        - quantity-per-customer
-        - restrict-to-plans
-        - restrict-to-products
-        - total-quantity
+    type: string
+    enum:
+      - discounts-per-redemption
+      - minimum-order-amount
+      - quantity-per-customer
+      - restrict-to-invoices
+      - restrict-to-plans
+      - restrict-to-products
+      - restrict-to-subscriptions
+      - total-quantity
