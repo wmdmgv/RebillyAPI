@@ -13,6 +13,11 @@ properties:
     description: Customer's ID
     allOf:
       - $ref: "#/definitions/ResourceId"
+  additionalRestrictions:
+    description: Additional restrictions for coupon's redemptions
+    type: array
+    items:
+      - $ref: "#/definitions/RedemptionRestriction"
   redeemedTime:
     description: Coupon redeem time
     readOnly: true

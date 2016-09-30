@@ -1,7 +1,7 @@
 description: restrict-to-subscriptions restrictions
 allOf:
   -
-    $ref: "#/definitions/CouponRestriction"
+    $ref: "#/definitions/RedemptionRestriction"
   -
     type: "object"
     required:
