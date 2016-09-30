@@ -8,9 +8,9 @@ properties:
     items:
       type: string
       enum:
-        - discounts-per-customers
-        - discounts-per-redemptions
+        - discounts-per-redemption
         - minimum-order-amount
+        - quantity-per-customer
         - restrict-to-plans
         - restrict-to-products
         - total-quantity
