@@ -5,7 +5,7 @@ properties:
     readOnly: true
     allOf:
       - $ref: "#/definitions/ResourceId"
-  couponId:
+  couponRedeemCode:
     description: Coupon's ID
     allOf:
       - $ref: "#/definitions/ResourceId"
