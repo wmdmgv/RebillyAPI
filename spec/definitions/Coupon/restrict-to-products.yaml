@@ -5,10 +5,10 @@ allOf:
   -
     type: "object"
     required:
-     - "value"
+     - "productIds"
     properties:
-      value:
+      productIds:
         type: array
-        description: Restriction value. Array of ids #todo
+        description: Product IDs coupon can be applied to
         items:
           type: string
