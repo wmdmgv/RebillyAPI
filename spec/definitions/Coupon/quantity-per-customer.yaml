@@ -1,12 +1,12 @@
-description: Limit per Customer restrictions
+description: Quantity per Customer restrictions
 allOf:
   -
     $ref: "#/definitions/CouponRestriction"
   -
     type: "object"
     required:
-     - "value"
+     - "quantity"
     properties:
-      value:
+      quantity:
         type: integer
         description: Restriction value
