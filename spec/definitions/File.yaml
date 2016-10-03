@@ -35,12 +35,16 @@ properties:
     type: integer
     readOnly: true
   width:
-    description: Image width, aplicable to images only
+    description: Image width, applicable to images only
     type: integer
     readOnly: true
   height:
-    description: Image height, aplicable to images only
+    description: Image height, applicable to images only
     type: integer
+    readOnly: true
+  sha1:
+    description: Hash sum of the file
+    type: string
     readOnly: true
   createdTime:
     description: The upload date/time

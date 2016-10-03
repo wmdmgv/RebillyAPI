@@ -23,6 +23,7 @@ properties:
       - plan
       - product
       - invoice
+      - note
   relatedId:
     description: Linked object Id
     type: string

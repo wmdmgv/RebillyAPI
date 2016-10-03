@@ -11,7 +11,7 @@ parameters:
       - .jpg
 get:
   tags:
-    - File
+    - Files
   summary: Used for converting images server-side
   description: |
     Used for converting images server-side

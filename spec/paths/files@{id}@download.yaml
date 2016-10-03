@@ -2,7 +2,7 @@ parameters:
   - $ref: "#/parameters/resourceId"
 get:
   tags:
-    - File download
+    - Files
   summary: Retrieve a file
   description: |
     Retrieve a file

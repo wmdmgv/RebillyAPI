@@ -31,14 +31,14 @@ get:
       $ref: "#/responses/AccessForbidden"
 post:
   tags:
-    - File
+    - Files
   summary: Create a file
   description: |
     Create a file
   parameters:
     - name: body
       in: body
-      description: Additionally, a file can be send with a multipart/form-data POST request or the file's raw body can be sent as a requirest body
+      description: Additionally, a file can be sent with a multipart/form-data POST request or the file's raw body can be sent as a request body
       required: true
       schema:
         type: object
