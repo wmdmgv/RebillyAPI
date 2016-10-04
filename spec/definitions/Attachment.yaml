@@ -33,19 +33,6 @@ properties:
   description:
     description: The Attachment description
     type: string
-  purpose:
-    description: The Attachment purpose
-    type: string
-    default: general
-    enum:
-      - general
-      - evidence
-      - policy
-      - contract
-      - logo
-      - watermark
-      - invoice
-      - productfeed
   createdTime:
     description: Creation date/time
     allOf:
