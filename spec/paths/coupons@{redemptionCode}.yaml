@@ -1,11 +1,16 @@
 parameters:
-  - $ref: "#/parameters/resourceId"
+  -
+      name: redemptionCode
+      in: path
+      description: The Coupon's redemption code
+      type: string
+      required: true
 get:
   tags:
     - Coupons
   summary: Retrieve a coupon
   description: |
-    Retrieve a coupon with specified identifier string
+    Retrieve a coupon with specified redemption code string
   responses:
     200:
       description: Coupon was retrieved successfully
@@ -25,9 +30,9 @@ get:
 put:
   tags:
     - Coupons
-  summary: Create or update a coupon with predefined ID
+  summary: Create or update a coupon with predefined redemption code
   description: |
-    Create or update a coupon with predefined identifier string
+    Create or update a coupon with predefined redemption code
   parameters:
     - name: body
       in: body

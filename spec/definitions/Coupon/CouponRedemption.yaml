@@ -1,12 +1,12 @@
 type: object
-description: Coupons redeem log
+description: Coupons redemption log
 properties:
   id:
     readOnly: true
     allOf:
       - $ref: "#/definitions/ResourceId"
-  couponRedeemCode:
-    description: Coupon's ID
+  couponRedemptionCode:
+    description: Coupon's redemption code
     allOf:
       - $ref: "#/definitions/ResourceId"
   customerId:

@@ -3,13 +3,12 @@ description: Coupons and Discounts
 required:
   - discount
 properties:
-  redeemCode:
+  redemptionCode:
     description: Coupon's redemption code
     readOnly: true
     allOf:
       - $ref: "#/definitions/ResourceId"
   discount:
-    description: Coupon's discount
     $ref: "#/definitions/Discount"
   restrictions:
     description: Coupon restrictions
