@@ -1,10 +1,9 @@
 parameters:
-  -
-      name: redemptionCode
-      in: path
-      description: The Coupon's redemption code
-      type: string
-      required: true
+  - name: redemptionCode
+    in: path
+    description: The Coupon's redemption code
+    type: string
+    required: true
 get:
   tags:
     - Coupons
