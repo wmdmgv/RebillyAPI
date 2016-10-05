@@ -10,8 +10,7 @@ properties:
       - $ref: "#/definitions/ResourceId"
   discount:
     description: Coupon's discount
-    allOf:
-      - $ref: "#/definitions/Discount"
+    $ref: "#/definitions/Discount"
   restrictions:
     description: Coupon restrictions
     type: array
