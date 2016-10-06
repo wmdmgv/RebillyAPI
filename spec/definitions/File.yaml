@@ -29,7 +29,7 @@ properties:
       - image/jpeg
       - image/gif
       - application/pdf
-      - audio/mpeg-3
+      - audio/mpeg
   size:
     description: The File size in bytes
     type: integer
