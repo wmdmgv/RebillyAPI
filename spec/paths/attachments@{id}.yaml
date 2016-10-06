@@ -2,7 +2,7 @@ parameters:
   - $ref: "#/parameters/resourceId"
 get:
   tags:
-    - Attachment
+    - Files
   summary: Retrieve an Attachment
   description: |
     Retrieve a Attachment with specified identifier string
@@ -24,7 +24,7 @@ get:
       $ref: "#/responses/NotFound"
 put:
   tags:
-    - Attachment
+    - Files
   summary: Update the Attachment with predefined ID
   description: |
     Update the Attachment with predefined ID
@@ -57,7 +57,7 @@ put:
         $ref: "#/definitions/InvalidError"
 delete:
   tags:
-    - Attachment
+    - Files
   summary: Delete an Attachment
   description: |
     Delete the Attachment with predefined identifier string

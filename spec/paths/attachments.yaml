@@ -1,6 +1,6 @@
 get:
   tags:
-    - Attachments
+    - Files
   summary: Retrieve a list of Attachments
   description: |
     Retrieve a list of Attachments
@@ -31,7 +31,7 @@ get:
       $ref: "#/responses/AccessForbidden"
 post:
   tags:
-    - Attachment
+    - Files
   summary: Create an Attachment
   description: |
     Create an Attachment
