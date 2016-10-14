@@ -8,9 +8,9 @@ properties:
     enum:
       - discounts-per-redemption
       - minimum-order-amount
-      - quantity-per-customer
+      - redemptions-per-customer
       - restrict-to-invoices
       - restrict-to-plans
       - restrict-to-products
       - restrict-to-subscriptions
-      - total-quantity
+      - total-redemptions
