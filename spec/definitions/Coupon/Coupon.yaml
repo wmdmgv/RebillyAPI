@@ -2,6 +2,7 @@ type: object
 description: Coupons and Discounts
 required:
   - discount
+  - issuedTime
 properties:
   redemptionCode:
     description: Coupon's redemption code
